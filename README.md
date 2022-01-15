@@ -1,2 +1,2 @@
 # My first GitHub site
-Use this site for testing purposes, learning HTML, CSS, JavaScript.
+Using this site for testing purposes, learning HTML, CSS, JavaScript.
