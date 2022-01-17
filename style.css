@@ -1,8 +1,40 @@
+@font-face {
+    font-family: 'Radiance';
+    src: url('https://steamcdn-a.akamaihd.net/apps/underlords/fonts/Radiance-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Radiance';
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Radiance';
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Radiance';
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
 body {
     margin: 0;
     min-width: 1100px;
-    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-    font-size: 16px;
+    font-family: "Samsung Sans", sans-serif;
+    font-size: 18px;
     line-height: 32px;
     color: #222222;
     background-color: #f2f4f6;
@@ -93,6 +125,26 @@ body {
     padding-bottom: 3px;
 }
 
+.lang {
+    text-align: right;
+    margin-left: 1200px;
+    background-color: #0040ff2b;
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+}
+
+.lang p {
+    margin: 0;
+}
+
+.lang a {
+    color: #000000c2;
+    font-weight: 500;
+    margin-left: 0px;
+    margin-right: 4px;
+}
+
 .hero-image {
     margin-bottom: 620px;
 }
@@ -104,7 +156,7 @@ body {
 
 .heading {
     margin: 0 0 16px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+    font-family: "Radiance", serif;
     font-size: 88px;
     line-height: 96px;
     font-weight: 400;
@@ -122,7 +174,7 @@ body {
 
 .subheading {
     margin: 0 0 56px;
-    font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+    font-family: "Radiance", serif;
     font-size: 64px;
     line-height: 80px;
     font-weight: 400;
@@ -217,7 +269,7 @@ body {
 }
 
 .page-footer {
-    background-color: #00417d;
+    background-color: #4b4b4b;
     color: #ffffff;
     display: grid;
     grid-template-columns: auto auto 2fr;
