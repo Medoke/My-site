@@ -7,10 +7,12 @@
             "request": "launch",
             "reAttach": true,
             "url": "https://medoke.github.io/My-site/",
-            "pathMappings": [{
-                "url": "https://medoke.github.io/My-site/",
-                "path": "E:\\WORK\\Cloned reps\\My-site"
-            }]
+            "pathMappings": [
+                {
+                    "url": "https://medoke.github.io/My-site/",
+                    "path": "E:\\WORK\\Cloned reps\\My-site"
+                }
+            ]
         }
     ]
 }
