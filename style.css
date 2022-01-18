@@ -11,6 +11,14 @@ body {
     background-position: top center;
 }
 
+h3 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -125,7 +133,7 @@ body {
 .heading {
     margin: 0 0 16px;
     font-family: "Radiance", serif;
-    font-size: 88px;
+    font-size: 5em;
     line-height: 96px;
     font-weight: 400;
 }
@@ -157,7 +165,6 @@ body {
 .intro h3,
 .portfolio h3 {
     margin: 0 0 12px;
-    font-size: 28px;
     line-height: 40px;
     font-weight: 500;
 }
