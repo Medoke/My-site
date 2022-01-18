@@ -276,48 +276,48 @@ body {
 
 @font-face {
     font-family: 'Samsung Sans';
-    src: url('/fonts/SamsungSans-Thin.ttf') format('ttf');
+    src: url('/MySite/fonts/SamsungSans-Thin.ttf') format('ttf');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Samsung Sans';
-    src: url('/fonts/SamsungSans-Light.ttf') format('ttf');
+    src: url('/MySite/fonts/SamsungSans-Light.ttf') format('ttf');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Samsung Sans';
-    src: url('/fonts/SamsungSans-Regular.ttf') format('ttf');
+    src: url('/MySite/fonts/SamsungSans-Regular.ttf') format('ttf');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Samsung Sans';
-    src: url('/fonts/SamsungSans-Medium.ttf') format('ttf');
+    src: url('/MySite/fonts/SamsungSans-Medium.ttf') format('ttf');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Samsung Sans';
-    src: url('/fonts/SamsungSans-Bold.ttf') format('ttf');
+    src: url('/MySite/fonts/SamsungSans-Bold.ttf') format('ttf');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Radiance';
-    src: url('/fonts/Radiance-Regular.woff') format('woff');
+    src: url('/MySite/fonts/Radiance-Regular.woff') format('woff');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Radiance';
-    src: url('/fonts/Radiance-Bold.woff') format('woff');
+    src: url('/MySite/fonts/Radiance-Bold.woff') format('woff');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Radiance';
-    src: url('/fonts/Radiance-Semibold.woff') format('woff');
+    src: url('/MySite/fonts/Radiance-Semibold.woff') format('woff');
     font-display: swap
 }
