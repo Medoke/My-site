@@ -276,36 +276,41 @@ body {
 
 @font-face {
     font-family: 'Samsung Sans';
-    src: url('/MySite/fonts/SamsungSans-Thin.ttf') format('ttf');
-    font-weight: 200;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sans Regular'), url('/MySite/fonts/SamsungSans-Regular.woff') format('woff');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Samsung Sans';
-    src: url('/MySite/fonts/SamsungSans-Light.ttf') format('ttf');
-    font-weight: 300;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sans Thin'), url('/MySite/fonts/SamsungSans-Thin.woff') format('woff');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Samsung Sans';
-    src: url('/MySite/fonts/SamsungSans-Regular.ttf') format('ttf');
-    font-weight: 400;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sans Light'), url('/MySite/fonts/SamsungSans-Light.woff') format('woff');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Samsung Sans';
-    src: url('/MySite/fonts/SamsungSans-Medium.ttf') format('ttf');
-    font-weight: 500;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sans Medium'), url('/MySite/fonts/SamsungSans-Medium.woff') format('woff');
     font-display: swap
 }
 
 @font-face {
     font-family: 'Samsung Sans';
-    src: url('/MySite/fonts/SamsungSans-Bold.ttf') format('ttf');
-    font-weight: 600;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sans Bold'), url('/MySite/fonts/SamsungSans-Bold.woff') format('woff');
     font-display: swap
 }
 
