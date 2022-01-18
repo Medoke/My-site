@@ -277,7 +277,7 @@ body {
 @font-face {
     font-family: 'Samsung Sans';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     src: local('Samsung Sans Regular'), url('/MySite/fonts/SamsungSans-Regular.woff') format('woff');
     font-display: swap
 }
@@ -285,7 +285,7 @@ body {
 @font-face {
     font-family: 'Samsung Sans';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 200;
     src: local('Samsung Sans Thin'), url('/MySite/fonts/SamsungSans-Thin.woff') format('woff');
     font-display: swap
 }
@@ -293,7 +293,7 @@ body {
 @font-face {
     font-family: 'Samsung Sans';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     src: local('Samsung Sans Light'), url('/MySite/fonts/SamsungSans-Light.woff') format('woff');
     font-display: swap
 }
@@ -301,7 +301,7 @@ body {
 @font-face {
     font-family: 'Samsung Sans';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     src: local('Samsung Sans Medium'), url('/MySite/fonts/SamsungSans-Medium.woff') format('woff');
     font-display: swap
 }
@@ -309,7 +309,7 @@ body {
 @font-face {
     font-family: 'Samsung Sans';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     src: local('Samsung Sans Bold'), url('/MySite/fonts/SamsungSans-Bold.woff') format('woff');
     font-display: swap
 }
