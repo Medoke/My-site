@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic">
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>Портфолио младшего front-end разработчика</title>
 </head>
@@ -12,17 +12,19 @@
 <body>
     <header class="page-header">
         <div class="container">
-            <p><a id="email" href="mailto:medokes@gmail.com" class="email" target="_blank" rel="noopener noreferrer">medokes@gmail.com</a><span title="Нажмите чтобы скопировать (Позже я заставлю это работать)" class="copy-button-header" id="copyemail"></span></p>
-            <p><a href="https://github.com/Medoke" class="github" target="_blank">Medoke</a></p>
-            <p><a href="https://linkedin.com/in/medok/" class="linkedin" target="_blank">Medok</a></p>
+            <p><a alt="Email" id="email" href="mailto:medokes@gmail.com" class="email" target="_blank" rel="noopener noreferrer">medokes@gmail.com</a><span alt="Копировать" title="Нажмите чтобы скопировать (Позже я заставлю это работать)" class="copy-button"
+                    id="copyemail"></span></p>
+            <p><a alt="GitHub" href="https://github.com/Medoke" class="github" target="_blank">Medoke</a></p>
+            <p><a alt="LinkedIn" href="https://linkedin.com/in/medok/" class="linkedin" target="_blank">Medok</a></p>
         </div>
         <div class="container">
-            <p><a id="discord" href="https://discordapp.com/users/269479574465806346/" class="discord" target="_blank">Medok#8185</a><span title="Нажмите чтобы скопировать (Позже я заставлю это работать)" class="copy-button-header" id="copydiscord"></span></p>
-            <p><a href="https://twitch.tv/Medoke" class="twitch" target="_blank">Medoke</a></p>
-            <p><a href="https://steamcommunity.com/id/Medok/" class="steam" target="_blank">Medok</a></p>
+            <p><a alt="Discord" id="discord" href="https://discordapp.com/users/269479574465806346/" class="discord" target="_blank">Medok#8185</a><span alt="Копировать" title="Нажмите чтобы скопировать (Позже я заставлю это работать)" class="copy-button"
+                    id="copydiscord"></span></p>
+            <p><a alt="Twitch" href="https://twitch.tv/Medoke" class="twitch" target="_blank">Medoke</a></p>
+            <p><a alt="Steam" href="https://steamcommunity.com/id/Medok/" class="steam" target="_blank">Medok</a></p>
         </div>
         <div class="lang">
-            <p><a title="English" href="index.html">EN</a></p>
+            <p><a title="English" href="/MySite/">EN</a></p>
         </div>
     </header>
 
@@ -45,6 +47,19 @@
             <h3>Что я могу</h3>
             <p>Я могу верстать простые сайты, локализировать любой контент на русский/украинский языки.</p>
         </div>
+        <div class="skills">
+            <h3>Мои навыки</h3>
+            <dl class="skills-list">
+                <dt class="skill-html">HTML</dt>
+                <dd class="level">
+                    <div style="width: 60%;">60%</div>
+                </dd>
+                <dt class="skill-css">CSS</dt>
+                <dd class="level">
+                    <div style="width: 40%;">40%</div>
+                </dd>
+            </dl>
+        </div>
     </section>
 
     <section class="portfolio">
@@ -52,10 +67,11 @@
             <h2 class="subheading">Мои работы</h2>
 
             <h3>Этот сайт</h3>
-            <p>Мой первый сайт на хостинге <a href="https://github.com">GitHub</a>.</p>
+            <p>Мой первый сайт на хостинге <a alt="GitHub" href="https://github.com">GitHub</a>.</p>
 
             <h3>Dota 2 Wiki</h3>
-            <p>С 2012 года являюсь администратором <a href="https://dota2.fandom.com" target="_blank">английской</a> вики и бюрократом <a href="https://dota2.fandom.com/ru" target="_blank">русской</a> вики по Dota 2, компьютерной игре в жанре MOBA.</p>
+            <p>С 2012 года являюсь администратором <a alt="Dota 2 Wiki" href="https://dota2.fandom.com" target="_blank">английской</a> вики и бюрократом <a alt="Dota 2 Вики" href="https://dota2.fandom.com/ru" target="_blank">русской</a> вики по Dota 2, компьютерной
+                игре в жанре MOBA.</p>
             <p>Большую часть времени я занимался русской вики, переводил статьи, локализировал шаблоны и занимался административными делами.</p>
             <p>Также я пробовал настроить front-end часть вики, чтобы сделать их чтение и редактирование максимально комфортным, и чтобы соответствовать внутриигровому виду.</p>
         </div>
@@ -63,14 +79,15 @@
 
     <footer class="page-footer">
         <div class="container">
-            <p><a href="mailto:medokes@gmail.com" class="email" target="_blank" rel="noopener noreferrer">medokes@gmail.com</a><span title="Нажмите чтобы скопировать (Позже я заставлю это работать)" class="copy-button-footer" id="copyemail"></span></p>
-            <p><a href="https://github.com/Medoke" class="github" target="_blank">Medoke</a></p>
-            <p><a href="https://linkedin.com/in/medok/" class="linkedin" target="_blank">Medok</a></p>
+            <p><a alt="Email" href="mailto:medokes@gmail.com" class="email" target="_blank" rel="noopener noreferrer">medokes@gmail.com</a><span alt="Копировать" title="Нажмите чтобы скопировать (Позже я заставлю это работать)" class="copy-button invert"
+                    id="copyemail"></span></p>
+            <p><a alt="GitHub" href="https://github.com/Medoke" class="github" target="_blank">Medoke</a></p>
+            <p><a alt="LinkedIn" href="https://linkedin.com/in/medok/" class="linkedin" target="_blank">Medok</a></p>
         </div>
         <div class="container">
-            <p><a href="https://discordapp.com/users/269479574465806346/" class="discord" target="_blank">Medok#8185</a><span title="Нажмите чтобы скопировать (Позже я заставлю это работать)" class="copy-button-footer" id="copydiscord"></span></p>
-            <p><a href="https://twitch.tv/Medoke" class="twitch" target="_blank">Medoke</a></p>
-            <p><a href="https://steamcommunity.com/id/Medok/" class="steam" target="_blank">Medok</a></p>
+            <p><a alt="Discord" href="https://discordapp.com/users/269479574465806346/" class="discord" target="_blank">Medok#8185</a><span alt="Копировать" title="Нажмите чтобы скопировать (Позже я заставлю это работать)" class="copy-button invert" id="copydiscord"></span></p>
+            <p><a alt="Twitch" href="https://twitch.tv/Medoke" class="twitch" target="_blank">Medoke</a></p>
+            <p><a alt="Steam" href="https://steamcommunity.com/id/Medok/" class="steam" target="_blank">Medok</a></p>
         </div>
     </footer>
 </body>

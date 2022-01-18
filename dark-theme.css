@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Radiance';
+    src: url('https://steamcdn-a.akamaihd.net/apps/underlords/fonts/Radiance-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Radiance';
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Radiance';
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Radiance';
+    src: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+body {
+    margin: 0;
+    min-width: 1100px;
+    font-family: "Samsung Sans", sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: #f2f2f2;
+    background-color: #080208;
+    background-image: url("dark-theme/img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.page-header a {
+    margin-left: 56px;
+    color: #fea18d;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.level {
+    margin: 4px 0 16px;
+    padding: 0;
+    height: 14px;
+    font-size: 0;
+    background-color: #080208;
+    border: 1px solid #712073;
+    border-radius: 8px;
+}
+
+.level div {
+    margin: 1px;
+    height: 12px;
+    background-color: #fea18d;
+    border-radius: 6px;
+}
+
+.button {
+    padding: 6px 20px;
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #712073;
+    color: #ffffff;
+}
+
+.page-footer {
+    padding: 40px 0;
+    background-color: #260c26;
+}
+
+.page-footer a {
+    margin-left: 56px;
+    color: #fea18d;
+    display: grid;
+    grid-template-columns: auto auto 2fr;
+    margin: 0 auto;
+    max-width: 1920px;
+    padding: 70px 20px 40px;
+}
+
+.copy-button {
+    background-image: url("https://img.icons8.com/fluency-systems-regular/48/000000/copy.png");
+    height: 12px;
+    display: inline-block;
+    background-size: 16px;
+    padding-bottom: 2px;
+    width: 16px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.invert {
+    filter: invert(100%);
+}
