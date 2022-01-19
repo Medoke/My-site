@@ -81,7 +81,7 @@ section {
 .discord,
 .linkedin,
 .github,
-.steam,
+.telegram,
 .twitch {
     padding-left: 35px;
     height: 30px;
@@ -107,8 +107,8 @@ section {
     background-image: url("img/icon-github.svg");
 }
 
-.steam {
-    background-image: url("img/icon-steam-circled.svg");
+.telegram {
+    background-image: url("img/icon-telegram.svg");
 }
 
 .twitch {
@@ -129,8 +129,8 @@ section {
 .linkedin:hover,
 .github:focus,
 .github:hover,
-.steam:focus,
-.steam:hover,
+.telegram:focus,
+.telegram:hover,
 .twitch:focus,
 .twitch:hover {
     filter: grayscale(0);
