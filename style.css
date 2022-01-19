@@ -1,14 +1,14 @@
 body {
+    position: relative;
     margin: 0;
-    min-width: 1100px;
+    min-width: 1408px;
     font-family: "Samsung Sans", sans-serif;
     font-size: 18px;
     line-height: 32px;
-    color: #222222;
-    background-color: #f2f4f6;
-    background-image: url("img/hero-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
+    color: #f2f2f2;
+    background-color: #141530;
+    background-image: url("img/pattern-lines-hero.svg");
+    background-position: center;
 }
 
 h3 {
@@ -19,95 +19,136 @@ h2 {
     font-size: 4em;
 }
 
+section {
+    letter-spacing: 0.5px;
+}
+
 .container {
-    max-width: 1100px;
+    max-width: 1408px;
     margin: 0 auto;
     padding: 0 16px;
 }
 
 .page-header {
-    padding: 32px 0 32px;
+    padding: 40px 0;
     display: grid;
     grid-template-columns: auto auto 2fr;
     margin: 0 auto;
     max-width: 1920px;
 }
 
-.page-header .container,
-.page-footer .container {
-    max-width: 1920px;
-    text-align: left;
-}
-
-.page-header a {
-    margin-left: 56px;
-    color: #288be6;
+.page-header a,
+.page-footer a {
+    position: relative;
+    margin-left: 64px;
+    padding-bottom: 10px;
+    padding-top: 9px;
+    font-weight: 500;
     text-decoration: none;
     background-repeat: no-repeat;
     background-position: left;
+    color: inherit;
+}
+
+.page-header a:focus,
+.page-header a:hover,
+.page-footer a:focus,
+.page-footer a:hover {
+    color: #69ceff;
+}
+
+.page-header a::after,
+.page-footer a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #69ceff;
+    transition: width 0.3s;
+}
+
+.page-header a:hover::after,
+.page-footer a:hover::after {
+    width: 100%;
+}
+
+
+/* Contacts without hover */
+
+.email,
+.discord,
+.linkedin,
+.github,
+.steam,
+.twitch {
+    padding-left: 35px;
+    height: 30px;
+    display: inline-block;
+    background-size: 25px;
+    padding-bottom: 3px;
+    filter: grayscale(50%);
 }
 
 .email {
-    padding-left: 35px;
     background-image: url("img/icon-gmail.svg");
-    height: 30px;
-    display: inline-block;
-    background-size: 25px;
-    padding-bottom: 3px;
 }
 
 .discord {
-    padding-left: 35px;
     background-image: url("img/icon-discord.svg");
-    height: 30px;
-    display: inline-block;
-    background-size: 25px;
-    padding-bottom: 3px;
 }
 
 .linkedin {
-    padding-left: 35px;
     background-image: url("img/icon-linkedin.svg");
-    height: 30px;
-    display: inline-block;
-    background-size: 25px;
-    padding-bottom: 3px;
 }
 
 .github {
-    padding-left: 35px;
     background-image: url("img/icon-github.svg");
-    height: 30px;
-    display: inline-block;
-    background-size: 25px;
-    padding-bottom: 3px;
 }
 
 .steam {
-    padding-left: 35px;
     background-image: url("img/icon-steam-circled.svg");
-    height: 30px;
-    display: inline-block;
-    background-size: 25px;
-    padding-bottom: 3px;
 }
 
 .twitch {
-    padding-left: 35px;
     background-image: url("img/icon-twitch.svg");
-    height: 30px;
-    display: inline-block;
-    background-size: 25px;
-    padding-bottom: 3px;
 }
+
+
+/* Contacts without hover end */
+
+
+/* Contacts hover/focus */
+
+.email:focus,
+.email:hover,
+.discord:focus,
+.discord:hover,
+.linkedin:focus,
+.linkedin:hover,
+.github:focus,
+.github:hover,
+.steam:focus,
+.steam:hover,
+.twitch:focus,
+.twitch:hover {
+    filter: grayscale(0);
+}
+
+
+/* Contacts hover/focus end */
+
+
+/* Lang switcher */
 
 .lang {
     text-align: right;
-    margin-left: 1200px;
-    background-color: #0040ff2b;
-    height: 32px;
-    width: 32px;
-    border-radius: 16px;
+    margin-left: 1240px;
+    background-color: #9ab3ff2b;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
 }
 
 .lang p {
@@ -115,46 +156,99 @@ h2 {
 }
 
 .lang a {
-    color: #000000c2;
-    font-weight: 500;
     margin-left: 0px;
-    margin-right: 4px;
+    margin-right: 5px;
+}
+
+
+/* Lang switcher end */
+
+a:active {
+    opacity: 0.5;
 }
 
 .hero-image {
-    margin-bottom: 620px;
+    position: relative;
+    padding-top: 200px;
+    height: 798px;
+    background-image: url("img/bg-html.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 48px;
 }
 
 .hero-image .container {
-    max-width: 1920px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-image::before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: calc(50vw - 32px);
+    width: 800px;
+    height: 800px;
+    background-image: url("img/hero-image.svg");
+    background-repeat: no-repeat;
+}
+
+.hero-image::after {
+    position: absolute;
+    content: "";
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    background-color: #0b0c23;
+    background-image: url("img/bg-tags.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 2px solid #5053a8;
 }
 
 .heading {
-    margin: 0 0 16px;
     font-family: "Radiance", serif;
-    font-size: 5em;
-    line-height: 96px;
-    font-weight: 400;
+    z-index: 1;
+    order: 2;
+    margin: 0 0 0 -10px;
+    width: 815px;
+    font-size: 96px;
+    line-height: 112px;
+    font-weight: 500;
 }
 
 .hero-image p {
+    z-index: 1;
+    order: 1;
     margin: 0;
+    padding: 32px 0;
+    padding-bottom: 16px;
     font-size: 32px;
     line-height: 48px;
+    color: #69ceff;
+}
+
+.intro,
+.portfolio {
+    background-color: #141530;
+    background-image: url("img/pattern-lines.svg");
+    background-repeat: repeat-y;
+    background-position-x: center;
 }
 
 .intro {
-    margin: 0 0 120px;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    min-height: 828px;
 }
 
 .subheading {
-    margin: 0 0 56px;
+    margin: 0 0 100px;
     font-family: "Radiance", serif;
-    font-size: 64px;
-    line-height: 80px;
-    font-weight: 400;
     text-align: center;
+    line-height: 88px;
+    font-weight: 500;
+    color: #69ceff;
 }
 
 .avatar {
@@ -162,20 +256,60 @@ h2 {
     text-align: center;
 }
 
+.intro .container {
+    position: relative;
+}
+
+.user-image {
+    position: absolute;
+    margin: 0;
+}
+
+.user-image img {
+    width: 640px;
+    height: 640px;
+    object-fit: cover;
+}
+
+.intro .container div {
+    margin-left: 720px;
+    margin-bottom: 56px;
+}
+
 .intro h3,
 .portfolio h3 {
-    margin: 0 0 12px;
+    margin: 0 0 16px;
     line-height: 40px;
     font-weight: 500;
 }
 
+.intro a:visited,
+.portfolio a:visited {
+    color: #078bff;
+}
+
+.intro a:focus,
+.portfolio a:focus,
+.intro a:hover,
+.portfolio a:hover {
+    color: #69ceff;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+
 .intro p {
     margin: 0 0 32px;
+    z-index: 2;
 }
 
 .skills {
-    max-width: 1100px;
+    max-width: 1408px;
     margin: 0 auto;
+    padding: 0 16px;
+}
+
+.skills h3 {
+    margin-bottom: 40px;
 }
 
 .skills-list {
@@ -184,38 +318,47 @@ h2 {
 }
 
 .skills-list dt {
-    padding-left: 32px;
+    margin: 0 0 8px;
+    padding-left: 46px;
+    height: 36px;
+    font-size: 24px;
+    letter-spacing: 1px;
     background-repeat: no-repeat;
     background-position: left;
 }
 
 .skill-html {
     background-image: url("img/icon-html.svg");
+    background-size: 32px;
 }
 
 .skill-css {
     background-image: url("img/icon-css.svg");
+    background-size: 32px;
 }
 
 .level {
-    margin: 4px 0 16px;
-    padding: 0;
-    height: 14px;
-    font-size: 0;
-    background-color: #ffffff;
-    border: 1px solid #86c3fa;
-    border-radius: 8px;
+    margin: 0 0 40px;
+    height: 24px;
+    text-align: right;
+    background-color: #0b0c23;
+    box-shadow: inset 0 0 12px #070716;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-.level div {
-    margin: 1px;
-    height: 12px;
-    background-color: #288be6;
-    border-radius: 6px;
+.skills .level div {
+    margin: 0;
+    height: 24px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    background-color: #5053a8;
+    background-image: url("img/progress-pattern.svg");
 }
 
 .portfolio {
-    margin: 0 0 120px;
+    margin: 0;
+    padding-bottom: 160px;
 }
 
 .projects {
@@ -225,45 +368,64 @@ h2 {
 }
 
 .projects li {
-    margin: 0 0 80px;
+    position: relative;
+    min-height: 256px;
+    margin: 0 0 100px;
+    padding-left: 528px;
 }
 
 .project-image {
-    margin: 0 0 24px;
-    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.project-image img {
+    width: 448px;
+    height: 256px;
+    object-fit: cover;
 }
 
 .projects p {
-    margin: 0 0 24px;
+    margin: 0 0 32px;
 }
 
 .button {
-    padding: 6px 20px;
+    margin: 0;
+    padding: 8px 24px;
     display: inline-block;
     vertical-align: baseline;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 4px;
-    background-color: #288be6;
-    color: #ffffff;
+    color: #0b0c23;
+    background-color: #69ceff;
+    box-shadow: 0 4px 16px rgba(249, 221, 121, 0.4);
+    border-radius: 24px;
+    transition: background-color 100ms, box-shadow 100ms;
+}
+
+.button:focus,
+.button:hover {
+    background-color: #f9e7a8;
+    box-shadow: 0 4px 32px rgba(249, 221, 121, 0.6);
+}
+
+.button:active {
+    background-color: #b69e4b;
+    box-shadow: none;
 }
 
 .page-footer {
-    background-color: #4b4b4b;
-    color: #ffffff;
+    padding: 40px 0;
+    background-color: #212349;
     display: grid;
     grid-template-columns: auto auto 2fr;
     margin: 0 auto;
     max-width: 1920px;
-    padding: 70px 20px 40px;
-}
-
-.page-footer a {
-    margin-left: 56px;
-    color: inherit;
-    text-decoration: none;
-    background-repeat: no-repeat;
-    background-position: left;
 }
 
 .copy-button {
@@ -275,10 +437,12 @@ h2 {
     width: 16px;
     margin-left: 3px;
     cursor: pointer;
+    filter: invert(100%)
 }
 
-.invert {
-    filter: invert(100%);
+.copy-button:focus,
+.copy-button:hover {
+    filter: invert(50%)
 }
 
 @font-face {
@@ -316,7 +480,7 @@ h2 {
 @font-face {
     font-family: 'Samsung Sans';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     src: local('Samsung Sans Bold'), url('/MySite/fonts/SamsungSans-Bold.woff') format('woff');
     font-display: swap
 }
@@ -330,14 +494,14 @@ h2 {
 
 @font-face {
     font-family: 'Radiance';
-    src: url('/MySite/fonts/Radiance-Bold.woff') format('woff');
+    src: url('/MySite/fonts/Radiance-Semibold.woff') format('woff');
     font-weight: 600;
     font-display: swap
 }
 
 @font-face {
     font-family: 'Radiance';
-    src: url('/MySite/fonts/Radiance-Semibold.woff') format('woff');
-    font-weight: 500;
+    src: url('/MySite/fonts/Radiance-Bold.woff') format('woff');
+    font-weight: 700;
     font-display: swap
 }
