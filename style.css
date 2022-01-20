@@ -36,7 +36,7 @@ a:active {
 .page-header {
     padding: 40px 0;
     display: grid;
-    grid-template-columns: 330px 260px 2fr;
+    grid-template-columns: auto auto 2fr;
     margin: 0 auto;
     max-width: 1920px;
 }
@@ -422,7 +422,7 @@ a:active {
     padding: 2.2em 0;
     background-color: #212349;
     display: grid;
-    grid-template-columns: 330px 260px;
+    grid-template-columns: auto auto 2fr;
     margin: 0 auto;
     max-width: 1920px;
 }
