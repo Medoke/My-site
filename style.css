@@ -4,7 +4,7 @@ body {
     min-width: 1408px;
     font-family: "Samsung Sans", sans-serif;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 2em;
     color: #f2f2f2;
     background-color: #141530;
     background-image: url("img/pattern-lines-hero.svg");
@@ -23,16 +23,20 @@ section {
     letter-spacing: 0.5px;
 }
 
+a:active {
+    opacity: 0.5;
+}
+
 .container {
     max-width: 1408px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 1em;
 }
 
 .page-header {
     padding: 40px 0;
     display: grid;
-    grid-template-columns: auto auto 2fr;
+    grid-template-columns: 330px 260px 2fr;
     margin: 0 auto;
     max-width: 1920px;
 }
@@ -40,9 +44,9 @@ section {
 .page-header a,
 .page-footer a {
     position: relative;
-    margin-left: 64px;
-    padding-bottom: 10px;
-    padding-top: 9px;
+    margin-left: 3.8em;
+    padding-bottom: 0.75em;
+    padding-top: 0.5em;
     font-weight: 500;
     text-decoration: none;
     background-repeat: no-repeat;
@@ -75,6 +79,30 @@ section {
 }
 
 
+/* Lang switcher */
+
+.lang {
+    text-align: right;
+    margin-left: 95%;
+    background-color: #9ab3ff2b;
+    height: 1.7em;
+    width: 1.85em;
+    line-height: 1.75em;
+}
+
+.lang p {
+    margin: 0;
+}
+
+.lang a {
+    margin-left: 0;
+    margin-right: 0.25em;
+}
+
+
+/* Lang switcher end */
+
+
 /* Contacts without hover */
 
 .email,
@@ -83,11 +111,10 @@ section {
 .github,
 .telegram,
 .twitch {
-    padding-left: 35px;
-    height: 30px;
+    padding-left: 2em;
+    height: 1.7em;
     display: inline-block;
-    background-size: 25px;
-    padding-bottom: 3px;
+    background-size: 1.4em;
     filter: grayscale(50%);
 }
 
@@ -139,34 +166,6 @@ section {
 
 /* Contacts hover/focus end */
 
-
-/* Lang switcher */
-
-.lang {
-    text-align: right;
-    margin-left: 1240px;
-    background-color: #9ab3ff2b;
-    height: 33px;
-    width: 33px;
-    border-radius: 50%;
-}
-
-.lang p {
-    margin: 0;
-}
-
-.lang a {
-    margin-left: 0px;
-    margin-right: 5px;
-}
-
-
-/* Lang switcher end */
-
-a:active {
-    opacity: 0.5;
-}
-
 .hero-image {
     position: relative;
     padding-top: 200px;
@@ -210,10 +209,10 @@ a:active {
     font-family: "Radiance", serif;
     z-index: 1;
     order: 2;
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 0.3em;
     width: 815px;
-    font-size: 96px;
-    line-height: 112px;
+    font-size: 5.3em;
+    line-height: 1.2em;
     font-weight: 500;
 }
 
@@ -221,10 +220,10 @@ a:active {
     z-index: 1;
     order: 1;
     margin: 0;
-    padding: 32px 0;
-    padding-bottom: 16px;
-    font-size: 32px;
-    line-height: 48px;
+    padding: 1em 0;
+    padding-bottom: 0.5em;
+    font-size: 2em;
+    line-height: 1.5em;
     color: #69ceff;
 }
 
@@ -237,22 +236,22 @@ a:active {
 }
 
 .intro {
-    padding-top: 60px;
-    padding-bottom: 120px;
+    padding-top: 3.3em;
+    padding-bottom: 2.6em;
     min-height: 828px;
 }
 
 .subheading {
-    margin: 0 0 100px;
+    margin: 0 0 1.3em;
     font-family: "Radiance", serif;
     text-align: center;
-    line-height: 88px;
+    line-height: 1.2em;
     font-weight: 500;
     color: #69ceff;
 }
 
 .avatar {
-    margin: 0 0 32px;
+    margin: 0 0 2em;
     text-align: center;
 }
 
@@ -279,7 +278,7 @@ a:active {
 .intro h3,
 .portfolio h3 {
     margin: 0 0 16px;
-    line-height: 40px;
+    line-height: 2em;
     font-weight: 500;
 }
 
@@ -298,18 +297,18 @@ a:active {
 }
 
 .intro p {
-    margin: 0 0 32px;
+    margin: 0 0 2em;
     z-index: 2;
 }
 
 .skills {
     max-width: 1408px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 1em;
 }
 
 .skills h3 {
-    margin-bottom: 40px;
+    margin-bottom: 1.2em;
 }
 
 .skills-list {
@@ -318,10 +317,10 @@ a:active {
 }
 
 .skills-list dt {
-    margin: 0 0 8px;
-    padding-left: 46px;
-    height: 36px;
-    font-size: 24px;
+    margin: 0 0 0.5em;
+    padding-left: 2em;
+    height: 1.7em;
+    font-size: 1.3em;
     letter-spacing: 1px;
     background-repeat: no-repeat;
     background-position: left;
@@ -329,36 +328,36 @@ a:active {
 
 .skill-html {
     background-image: url("img/icon-html.svg");
-    background-size: 32px;
+    background-size: 1.5em;
 }
 
 .skill-css {
     background-image: url("img/icon-css.svg");
-    background-size: 32px;
+    background-size: 1.5em;
 }
 
 .level {
-    margin: 0 0 40px;
-    height: 24px;
+    margin: 0 0 2.5em;
+    height: 1.5em;
     text-align: right;
     background-color: #0b0c23;
-    box-shadow: inset 0 0 12px #070716;
-    border-radius: 12px;
+    box-shadow: inset 0 0 0.75em #070716;
+    border-radius: 0.75em;
     overflow: hidden;
 }
 
 .skills .level div {
     margin: 0;
-    height: 24px;
+    height: 1.5em;
     letter-spacing: 1px;
-    line-height: 26px;
+    line-height: 1.62em;
     background-color: #5053a8;
     background-image: url("img/progress-pattern.svg");
 }
 
 .portfolio {
     margin: 0;
-    padding-bottom: 160px;
+    padding-bottom: 5em;
 }
 
 .projects {
@@ -396,7 +395,7 @@ a:active {
     padding: 8px 24px;
     display: inline-block;
     vertical-align: baseline;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
@@ -420,10 +419,10 @@ a:active {
 }
 
 .page-footer {
-    padding: 40px 0;
+    padding: 2.2em 0;
     background-color: #212349;
     display: grid;
-    grid-template-columns: auto auto 2fr;
+    grid-template-columns: 330px 260px;
     margin: 0 auto;
     max-width: 1920px;
 }
@@ -505,4 +504,102 @@ a:active {
     src: url('/MySite/fonts/Radiance-Bold.woff') format('woff');
     font-weight: 700;
     font-display: swap
+}
+
+
+/* Rules for narrow screens */
+
+@media (max-width: 991px) and (orientation:landscape) {
+    /* Rules for tablets and some smartphones in landscape orientation */
+    body {
+        font-size: 16px;
+        max-width: 990px;
+        min-width: 95vw;
+    }
+    .page-footer {
+        padding: 0;
+        display: flex;
+        max-width: 50vw;
+    }
+    .page-header a,
+    .page-footer a {
+        margin-left: 0;
+    }
+    .lang {
+        margin-left: 90%;
+    }
+    .hero-image {
+        padding-top: 0;
+        height: 65vw;
+        background-size: 100vw 50vh;
+    }
+    .hero-image::before {
+        top: -10vh;
+        left: calc(50vw - 5vh);
+        width: 426px;
+        height: 583px;
+        background-size: 50vw 100vh;
+        background-position-y: 5vh;
+    }
+    .hero-image::after {
+        width: 100vw;
+    }
+    .page-header {
+        padding: 5vh 0;
+        grid-template-columns: 50vw 50vh 2fr;
+    }
+    .page-footer {
+        padding: 0;
+        display: flex;
+        max-width: 50vw;
+    }
+    .portfolio {
+        padding-bottom: 4vw;
+    }
+    .container {
+        max-width: 95vw;
+    }
+    .intro {
+        padding-top: 5vh;
+        padding-bottom: 5vw;
+    }
+    .skills {
+        max-width: 95vw;
+        margin: 0;
+    }
+    .subheading {
+        margin: 0 0 5vh;
+    }
+    .email,
+    .discord,
+    .linkedin,
+    .github,
+    .telegram,
+    .twitch {
+        filter: grayscale(0);
+    }
+}
+
+@media (max-width: 567px) and (orientation:portrait) {
+    /* Rules only for smartphones with portrait orientation, will adjust later */
+    body {
+        font-size: 16px;
+        max-width: 766px;
+        min-width: 95vw;
+    }
+    .page-footer {
+        display: inherit;
+    }
+    .page-header a,
+    .page-footer a {
+        margin-left: 0;
+    }
+    .email,
+    .discord,
+    .linkedin,
+    .github,
+    .telegram,
+    .twitch {
+        filter: grayscale(0);
+    }
 }
