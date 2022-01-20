@@ -526,7 +526,8 @@ a:active {
         margin-left: 0;
     }
     .lang {
-        margin-left: 90%;
+        margin-left: 0;
+        margin-right: 5%;
     }
     .hero-image {
         padding-top: 0;
@@ -546,12 +547,11 @@ a:active {
     }
     .page-header {
         padding: 5vh 0;
-        grid-template-columns: 50vw 50vh 2fr;
+        display: flex;
     }
     .page-footer {
         padding: 0;
         display: flex;
-        max-width: 50vw;
     }
     .portfolio {
         padding-bottom: 4vw;
