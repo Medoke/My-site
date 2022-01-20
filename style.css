@@ -516,11 +516,6 @@ a:active {
         max-width: 990px;
         min-width: 95vw;
     }
-    .page-footer {
-        padding: 0;
-        display: flex;
-        max-width: 50vw;
-    }
     .page-header a,
     .page-footer a {
         margin-left: 0;
@@ -587,12 +582,21 @@ a:active {
         max-width: 766px;
         min-width: 95vw;
     }
+    .page-header {
+        padding: 5vh 0;
+        display: flex;
+    }
     .page-footer {
-        display: inherit;
+        padding: 0;
+        display: flex;
     }
     .page-header a,
     .page-footer a {
         margin-left: 0;
+    }
+    .lang {
+        margin-left: 0;
+        margin-right: 5%;
     }
     .email,
     .discord,
