@@ -601,8 +601,8 @@ a:active {
     .hero-image::before {
         top: -1vh;
         left: calc(25vh - 1vh);
-        width: 50vw;
-        height: 50vw;
+        width: 45vw;
+        height: 45vw;
         background-size: 41vw 49vh;
         background-position: 6vw -12vh;
     }
