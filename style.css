@@ -583,7 +583,7 @@ a:active {
     /* Rules only for smartphones with portrait orientation */
     body {
         font-size: 12px;
-        max-width: 566px;
+        max-width: 99vw;
         min-width: 95vw;
     }
     .page-header a,
@@ -600,12 +600,12 @@ a:active {
         background-size: 100vw 50vh;
     }
     .hero-image::before {
-        top: -48vh;
-        left: calc(25vh - 3vh);
-        width: 426px;
-        height: 587px;
-        background-size: 50vw 100vh;
-        background-position-y: 6vh;
+        top: -1vh;
+        left: calc(25vh - 1vh);
+        width: 50vw;
+        height: 50vw;
+        background-size: 41vw 49vh;
+        background-position: 6vw -12vh;
     }
     .hero-image::after {
         bottom: -7vh;
