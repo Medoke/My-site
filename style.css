@@ -535,8 +535,8 @@ a:active {
     .hero-image::before {
         top: -10vh;
         left: calc(50vw - 5vh);
-        width: 426px;
-        height: 583px;
+        width: 50vw;
+        height: 50vw;
         background-size: 50vw 100vh;
         background-position-y: 5vh;
     }
