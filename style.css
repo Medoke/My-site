@@ -35,8 +35,7 @@ a:active {
 
 .page-header {
     padding: 40px 0;
-    display: grid;
-    grid-template-columns: auto auto 2fr;
+    display: flex;
     margin: 0 auto;
     max-width: 1920px;
 }
